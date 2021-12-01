@@ -5,4 +5,4 @@ ADD node_modules.tar.gz ./
 COPY package*.json ./
 COPY . .
 RUN npm install
-CMD npm start
+CMD ["npm", "start"]

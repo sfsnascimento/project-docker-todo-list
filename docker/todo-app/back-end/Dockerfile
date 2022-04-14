@@ -1,8 +1,7 @@
 FROM node:17-alpine
-WORKDIR /docker/todo-app/back-end
+WORKDIR /
 EXPOSE 3001
-ADD node_modules.tar.gz ./
-COPY package*.json ./
+ADD node_modules.tar.gz .
 COPY . .
 RUN npm install
 CMD ["npm", "start"]
